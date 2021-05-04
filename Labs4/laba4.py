@@ -77,6 +77,7 @@ plt.ylabel("Y")
 plt.savefig('My_points_graf.png')
 plt.show()
 
+
 X1.reverse()
 Y1.reverse()
 
