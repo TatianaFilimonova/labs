@@ -74,6 +74,7 @@ plt.scatter(X1, Y1, color = "brown")
 plt.title("Variant 14")
 plt.xlabel("X")
 plt.ylabel("Y")
+plt.savefig('My_points_graf.png')
 plt.show()
 
 X1.reverse()
