@@ -6,7 +6,6 @@ n = var + 1
 Yield = []
 available = []
 profit = []
-# C:\Users\filim\OneDrive\Документы\labs\Laba5.Farmer
 rb = xlrd.open_workbook(r'FARMER.xls', formatting_info=True)
 sheet = rb.sheet_by_index(0)
 k = 1
