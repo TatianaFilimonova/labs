@@ -1,17 +1,16 @@
-from math import cos, sin, pi, atan, fabs
+from math import cos, sin, pi
 import matplotlib.pyplot as plt
+
 g = 1.61
 M = 2150
 U = 3660
 a_max = 29.43
 m = 1000
 m_now = m
-
 t = 0.1
 X_0 = 0
 Y_0 = 2
 V_0 = 0
-
 y = Y_0
 x = 0
 vy = 1
