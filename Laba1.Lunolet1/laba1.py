@@ -1,15 +1,14 @@
 from math import cos, pi
+
 g = 1.61
 M = 2150
 U = 3660
 a_max = 29.43
 m_now = 200
-
 H_0 = 1186
 V_0 = 53
 alpha = 0
 t = 0.001
-
 v = V_0
 h = H_0
 h_min = -1
