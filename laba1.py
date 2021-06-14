@@ -45,4 +45,4 @@ while h > 0 and m_now > 0:
     print(
         f"V: {V_0}, H: {H_0}, alpha: {180 - angle}, dm: {dm}, t: {t}")
     V_0, H_0 = v, h
-print(f"оставшееся топливо: {m_now}")
+print(f"Remaining fuel: {m_now}")
