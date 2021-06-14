@@ -60,6 +60,6 @@ while x < 250005 and m_now > 0:
         break
 
     V_0X, V_0Y, X_0, Y_0 = vx, vy, x, y
-    print(f"Vx: {round(V_0X, 2)}, Vy: {round(V_0Y, 2)}, X: {round(X_0, 2)} Y: {round(Y_0, 2)}, alpha: {90 - angle}, dm: {round(d_m, 2)}, t: {t},")
+    print(f"Vx: {round(V_0X, 2)}, Vy: {round(V_0Y, 2)}, X: {round(X_0, 2)} Y: {round(Y_0, 2)}, alpha: {90 - angle}, d_m: {round(d_m, 2)}, t: {t},")
 
 print(f"Remaining fuel: {round(m_now, 1)}")
