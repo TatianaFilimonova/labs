@@ -1,4 +1,4 @@
-from math import cos, pi, fabs
+from math import cos, pi
 g = 1.61
 M = 2150
 U = 3660
