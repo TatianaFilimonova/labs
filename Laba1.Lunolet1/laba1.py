@@ -42,6 +42,6 @@ while h > 0 and m_now > 0:
         v, h = auto(angle, dm, t)
         h_min = pow(v, 2) / (2 * a_max)
     print(
-        f"V: {V_0}, H: {H_0}, alpha: {180 - angle}, dm: {dm}, t: {t}")
+        f"V: {V_0}, H: {H_0}, alpha: {180 - angle}, d_m: {dm}, t: {t}")
     V_0, H_0 = v, h
 print(f"Remaining fuel: {m_now}")
