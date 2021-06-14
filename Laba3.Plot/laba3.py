@@ -1,4 +1,4 @@
-from math import cos, sin, pi, atan, fabs
+from math import cos, sin, pi
 import matplotlib.pyplot as plt
 g = 1.61
 M = 2150
