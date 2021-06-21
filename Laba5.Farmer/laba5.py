@@ -6,6 +6,8 @@ n = var + 1
 Yield = []
 available = []
 profit = []
+names = []
+
 rb = xlrd.open_workbook(r'FARMER.xls', formatting_info=True)
 sheet = rb.sheet_by_index(0)
 k = 1
@@ -17,7 +19,7 @@ for i in range(k, k+6):
 k += 6
 for i in range(k, k+6):
     profit.append(sheet.row_values(n)[i])
-   
+
 carrot = pulp.LpVariable("Carrot", lowBound=0)
 cabbage = pulp.LpVariable("Cabbage", lowBound=0)
 peas = pulp.LpVariable("Pear", lowBound=0)
