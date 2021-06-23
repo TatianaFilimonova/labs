@@ -22,12 +22,12 @@ for i in range(k, k+6):
     profit.append(sheet.row_values(n)[i])
 for i in range(1, 7):
     prod_name.append(sheet.row_values(1)[i])
-#print(yrojai, available, profit, prod_name)
+#  print(yrojai, available, profit, prod_name)
 
 cost = [0 for k in range(6)]  # стоит 1 га урожая
 for i in range(6):
     cost[i] = -1 * yrojai[i] * profit[i]
-#print(cost)
+#  print(cost)
 
 tot1_eq = numpy.ones([1, len(cost)])
 tot2_eq = [10]
