@@ -1,7 +1,7 @@
 from Bellman.BellmanFord import BellmanFordMeasure
 from Dijkstra.Dijkstra import DijkstraMeasure
 
-def saveTimesWithName(times, name):
+def saveTimesWithName(times, name): # Лучше бы БД делала
     toSave = " "
     for time in times:
         toSave += f"{time} "
@@ -13,10 +13,10 @@ def collectDataDijkstraA():
     dijkstra = DijkstraMeasure()
     dijkstraTimes = []
     for n in range(10 ** 3, 10 ** 5, 1000):
-        print(n / 10 ** 5 * 100)
+        print(n / 10 ** 5 * 100) #  можно считать, что это проценты до окончания расчетов
         m = 100 * n
         timedijkstra = dijkstra.measure(n=n, m=m)
-        saveTimesWithName([timedijkstra], "./datasources/dijkstraA")
+        saveTimesWithName([timedijkstra], "./Datasources/dijkstraA")
         dijkstraTimes.append(timedijkstra)
 
 def collectDataDijkstraB():
@@ -25,7 +25,7 @@ def collectDataDijkstraB():
         print(n / 10 ** 5 * 100)
         m = 1000 * n
         timedijkstra = dijkstra.measure(n=n, m=m)
-        saveTimesWithName([timedijkstra], "./datasources/dijkstraB")
+        saveTimesWithName([timedijkstra], "./Datasources/dijkstraB")
 
 def collectDataBellmanFordA():
     bellmanFord = BellmanFordMeasure()
@@ -33,20 +33,20 @@ def collectDataBellmanFordA():
         print(n / 10 ** 5 * 100)
         m = 100 * n
         timeBellman = bellmanFord.measure(n=n, m=m)
-        saveTimesWithName([timeBellman], "./datasources/bellmanFordA")
+        saveTimesWithName([timeBellman], "./Datasources/bellmanFordA")
 
 def collectDataBellmanFordB():
     bellmanFord = BellmanFordMeasure()
-    for n in range(10 ** 1, 10 ** 4, 1000):
+    for n in range(10 ** 1, 10 ** 5, 1000):
         print(n / 10 ** 5 * 100)
         m = 1000 * n
         timeBellman = bellmanFord.measure(n=n, m=m)
-        saveTimesWithName([timeBellman], "./datasources/bellmanFordB")
+        saveTimesWithName([timeBellman], "./Datasources/bellmanFordB")
 
 collectDataDijkstraA()  # возможно стоит запускать их по отдельности
-#collectDataDijkstraB()
-#collectDataBellmanFordA()
-#collectDataBellmanFordB()
+collectDataDijkstraB()
+collectDataBellmanFordA()
+collectDataBellmanFordB()
 exit()
 
 # после повторного запуска функции, результаты пишутся в тот же файл,
